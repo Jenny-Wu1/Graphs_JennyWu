@@ -9,4 +9,21 @@ public class DirectedOrUndirected {
         }
         return "The matrix represents an undirected graph.";
     }
+
+    public static void main(String[] args) {
+        boolean[][] matrix1 = {
+                {true, false, false},
+                {false, false, true},
+                {true, true, true}
+        };
+
+        boolean[][] matrix2 = {
+                {true, false, true},
+                {false, false, true},
+                {true, true, true}
+        };
+
+        System.out.println(checkType(matrix1));
+        System.out.println(checkType(matrix2));
+    }
 }
