@@ -42,4 +42,19 @@ public class EveryPath {
         }
         path.remove(path.size() - 1);
     }
+
+    public static void main(String[] args) {
+        addEdge("A", "B", 2);
+        addEdge("B", "C", 3);
+        addEdge("C", "D", 2);
+        addEdge("D", "E", 1);
+        addEdge("A", "E", 7);
+        addEdge("A", "C", 5);
+        addEdge("B", "D", 4);
+
+        String u = "A";
+        String w = "E";
+
+        findPaths(u, w, 7);
+    }
 }
