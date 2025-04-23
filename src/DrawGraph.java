@@ -53,4 +53,11 @@ public class DrawGraph {
             System.out.println();
         }
     }
+
+    public static void main(String[] args) {
+        String input = "[ (I, 2) , (A, 5) , (E, 4) , (F,2) , (T, 2) , (S, 3) ]";
+        List<String> names = new ArrayList<>();
+        int[][] matrix = buildMatrix(input, names);
+        printMatrix(matrix, names);
+    }
 }
